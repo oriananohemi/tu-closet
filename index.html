@@ -8,17 +8,36 @@
   <link rel="stylesheet" href="./style/style.css">
   <title>Tu Closet Virtual</title>
 </head>
+</s>
 
 <body>
   <header class="flex-container">
     <div class="brand">
       <img class="img" src="./img/brand.png" alt="">
     </div>
-    <nav>
-      <ul class="flex-container">
+    <div>
+      <input type="checkbox" id="menu-icon">
+      <label class="menu-label" for="menu-icon">
+        <i class="fas fa-bars icon-menu"></i>
+      </label>
+    </div>
+    <nav class="header-menu">
+      <ul class="flex-container header-list">
         <li class="header-item"><a class="header-link" href="">Articulos</a></li>
         <li class="header-item"><a class="header-link" href="">Nosotros</a></li>
-        <li class="header-item"><a class="header-link" href="">Perfil</a></li>
+        <li class="header-item profile"><a class="header-link" href="">Perfil</a>
+          <div class="sesion">
+            <input type="text" class="input-sesion" placeholder="Indique su nombre" id="loginName">
+            <input type="password" class="input-sesion" placeholder="Indique su clave" id="loginPass">
+            <button class="button-sesion" id="open" onclick="logged()">Ingresar</button>
+          </div>
+        </li>
+        <li class="header-item">
+          <a href="./perfil/index.html">
+            <h2 id="loginUser">
+          </a>
+          </h2>
+        </li>
       </ul>
     </nav>
   </header>
@@ -33,7 +52,7 @@
     <div class="flex-container">
       <div class="card">
         <div class="img-container">
-          <img class="img" src="./img/carta1.jpeg" alt="">
+          <img class="img" src="./img/carta8.jpg" alt="">
         </div>
         <div class="buy">
           <h3>Vestido JSFDG</h3>
@@ -113,7 +132,7 @@
       </div>
       <div class="card">
         <div class="img-container">
-          <img class="img" src="./img/carta5.jpeg" alt="">
+          <img class="img" src="./img/carta5.jpg" alt="">
         </div>
         <div class="buy">
           <h3>Vestido JSFDG</h3>
@@ -145,7 +164,7 @@
       </div>
       <div class="card">
         <div class="img-container">
-          <img class="img" src="./img/carta1.jpeg" alt="">
+          <img class="img" src="./img/carta7.jpg" alt="">
         </div>
         <div class="buy">
           <h3>Vestido JSFDG</h3>
@@ -181,6 +200,7 @@
     </div>
     <p class="copyright">Hecho por Oriana</p>
   </footer>
+  <script src="./js/sesion.js"></script>
   <script src="https://kit.fontawesome.com/9fa96555ef.js"></script>
 </body>
 
