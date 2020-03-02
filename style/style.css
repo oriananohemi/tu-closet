@@ -26,7 +26,6 @@ body {
 }
 
 .img {
-  max-height: 100%;
   max-width: 100%;
 }
 
@@ -50,6 +49,49 @@ body {
 .header-link:hover {
   text-decoration: underline;
 }
+
+/* ESTILOS DEL MENU RESPONSIVE */
+
+.menu-icon {
+  display: none;
+}
+
+.menu-label {
+  display: none;
+}
+
+/* ESTILOS DEL INICIO DE SESION */
+
+.hidden {
+  display: none;
+}
+
+.sesion {
+  border-radius: 20px;
+  border: 1px solid red;
+  display: none;
+  height: 250px;
+  padding: 10px;
+  width: 250px;
+}
+
+.profile:hover .sesion {
+  display: block;
+}
+
+.input-sesion {
+  max-width: 200px;
+  margin: 10px 0;
+}
+
+.button-sesion {
+  color: white;
+  background-color: turquoise;
+  border: 1px solid turquoise;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 
 /* ESTILOS DEL HERO */
 
@@ -107,6 +149,43 @@ body {
  max-width: 80px; 
 }
 
+/* ESTILOS DE LA SECCION NOSOTROS */
+
+.slider {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.slider ul {
+	animation: cambio 20s infinite alternate linear;
+  display: flex;
+  width: 500px;
+}
+
+.slider img,
+.slider li {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 500px;
+	  width: 100%;
+}
+
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
 /* ESTILOS DEL FOOTER */
 
 .footer {
@@ -134,4 +213,30 @@ body {
 .copyright {
   color: white;
   font-size: 12px;
+}
+
+@media(max-width:920px) { 
+.menu-label {
+  display:block
+}
+
+.header-menu {
+    margin-left: -100%;
+    position: absolute;
+    transition: all .5s;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-list {
+  display: none;
+}
+
+.icon-menu {
+  font-size: 25px;
+}
+
+.icon-menu:hover .header-list {
+  display: block;
+}
 }
