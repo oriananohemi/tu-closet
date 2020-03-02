@@ -133,7 +133,11 @@ body {
   flex: 1 1 33,3%;
   padding: 10px;
   margin: 20px;
+}
 
+.card:hover {
+  transform: translateY(15px);
+  transition: all .3s ease-in;
 }
 
 .img-container {
@@ -152,15 +156,15 @@ body {
 /* ESTILOS DE LA SECCION NOSOTROS */
 
 .slider {
-  overflow: hidden;
-  margin: 0 auto;
-  width: 95%;
+	width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .slider ul {
+	display: flex;
+	width: 400%;
 	animation: cambio 20s infinite alternate linear;
-  display: flex;
-  width: 500px;
 }
 
 .slider img,
@@ -184,6 +188,11 @@ body {
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
+}
+
+.text-section,
+.slider {
+  flex: 1 1 50%;
 }
 
 /* ESTILOS DEL FOOTER */
