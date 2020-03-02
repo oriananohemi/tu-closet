@@ -106,3 +106,32 @@ body {
 .buttons {
  max-width: 80px; 
 }
+
+/* ESTILOS DEL FOOTER */
+
+.footer {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.social {
+  color: white;
+  font-size: 30px;
+}
+
+.social-link {
+  padding: 20px;
+}
+
+.social-link:hover {
+  color: blue;
+}
+
+.copyright {
+  color: white;
+  font-size: 12px;
+}
