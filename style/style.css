@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu&display=swap');
+
+/* ELIMINAR ESTILOS POR DEFECTO DEL BROWSER */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ESTILOS GENERALES DE LA PAGINA */
+
+body {
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* ESTILOS DEL HEADER */
+
+.brand {
+  width: 100px;
+} 
+
+.header-item {
+  padding: 10px;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+
+/* ESTILOS DEL HERO */
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+}
+
+.hero-text {
+  margin-right: 50%;
+  padding-top: 15%;
+  width: 50%;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.subtitle {
+  font-size: 40px;
+}
+
+/* ESTILOS DE LA SECCION DE CATALOGO */
+
+.catalogue section {
+
+}
+
+.title-section {
+  font-size: 50px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 20px;
+  flex: 1 1 33,3%;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+.img-container {
+  width: 300px;
+}
+
+.buy {
+  background-color: royalblue;
+  font-size: 20px;
+}
+
+.buttons {
+ max-width: 80px; 
+}
