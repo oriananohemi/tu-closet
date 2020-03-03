@@ -11,35 +11,34 @@
 </s>
 
 <body>
-  <header class="flex-container">
+  <header class="header">
     <div class="brand">
       <img class="img" src="./img/brand.png" alt="">
     </div>
-    <div>
-      <input type="checkbox" id="menu-icon">
-      <label class="menu-label" for="menu-icon">
-        <i class="fas fa-bars icon-menu"></i>
-      </label>
+    <div class="header-menu">
+      <div class="icon-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="header-nav">
+        <ul class="flex-container header-list">
+          <li class="header-item"><a class="header-link" href="#articulos">Articulos</a></li>
+          <li class="header-item"><a class="header-link" href="#nosotros">Nosotros</a></li>
+          <li class="header-item profile" id="logIn"><a class="header-link" href="">Iniciar Sesion</a>
+            <div class="sesion hidden">
+              <input type="text" class="input-sesion" placeholder="Indique su nombre" id="loginName">
+              <input type="password" class="input-sesion" placeholder="Indique su clave" id="loginPass">
+              <button class="button-sesion" id="open" onclick="logged()">Ingresar</button>
+            </div>
+          </li>
+          <li><a href="" id="logOut" class="hidden" onclick="signOff()">Cerrar Sesion</a></li>
+          <li class="header-item">
+            <a href="./perfil/index.html">
+              <h2 class="profile-name" id="loginUser"></h2>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header-menu">
-      <ul class="flex-container header-list">
-        <li class="header-item"><a class="header-link" href="">Articulos</a></li>
-        <li class="header-item"><a class="header-link" href="">Nosotros</a></li>
-        <li class="header-item profile" id="logIn"><a class="header-link" href="">Iniciar Sesion</a>
-          <div class="sesion hidden">
-            <input type="text" class="input-sesion" placeholder="Indique su nombre" id="loginName">
-            <input type="password" class="input-sesion" placeholder="Indique su clave" id="loginPass">
-            <button class="button-sesion" id="open" onclick="logged()">Ingresar</button>
-          </div>
-        </li>
-        <li><a href="" id="logOut" class="hidden" onclick="signOff()">Cerrar Sesion</a></li>
-        <li class="header-item">
-          <a href="./perfil/index.html">
-            <h2 class="profile-name" id="loginUser"></h2>
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <div class="hero">
     <div class="hero-text">
@@ -47,7 +46,7 @@
       <p class="subtitle">Lorem ipsum dolor sit amet.</p>
     </div>
   </div>
-  <section class="catalogue-section">
+  <section class="catalogue-section" id="articulos">
     <h2 class="title-section">Catalogo</h2>
     <div class="flex-container">
       <div class="card">
@@ -180,7 +179,7 @@
       </div>
     </div>
   </section>
-  <section class="flex-container">
+  <section class="flex-container separation" id="nosotros">
     <div class="slider">
       <ul>
         <li><img class="img" src="./img/slider1.jpg" alt=""></li>
