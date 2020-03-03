@@ -21,6 +21,7 @@
       </div>
       <nav class="header-nav">
         <ul class="flex-container header-list">
+          <li class="header-item"><a class="header-link" href="#">Inicio</a></li>
           <li class="header-item"><a class="header-link" href="#articulos">Articulos</a></li>
           <li class="header-item"><a class="header-link" href="#nosotros">Nosotros</a></li>
           <li class="header-item profile" id="logIn"><a class="header-link" href="">Iniciar Sesion</a>
@@ -30,11 +31,14 @@
               <button class="button-sesion" id="open" onclick="logged()">Ingresar</button>
             </div>
           </li>
-          <li><a href="" id="logOut" class="hidden" onclick="signOff()">Cerrar Sesion</a></li>
-          <li class="header-item">
-            <a href="./perfil/index.html">
-              <h2 class="profile-name" id="loginUser"></h2>
-            </a>
+          <li class="header-item sesion-container">
+            <h2 class="profile-name" id="loginUser"></h2>
+            <ul class="logOut hidden">
+              <li class="logOut-item"><a class="header-link" href="./perfil/index.html">Ver mi perfil</a></li>
+              <li class="logOut-item"><a class="header-link" href="" id="logOut" class="hidden"
+                  onclick="signOff()">Cerrar
+                  Sesion</a></li>
+            </ul>
           </li>
         </ul>
       </nav>

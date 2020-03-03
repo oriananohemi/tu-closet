@@ -22,10 +22,14 @@
       <nav class="header-nav">
         <ul class="flex-container header-list">
           <li class="header-item"><a class="header-link" href="../index.html">Inicio</a></li>
-          <li class="header-item">
-            <a href="./perfil/index.html">
-              <h2 class="profile-name" id="loginUser"></h2>
-            </a>
+          <li class="header-item sesion-container">
+            <h2 class="profile-name" id="loginUser"></h2>
+            <ul class="logOut hidden">
+              <li class="logOut-item"><a class="header-link" href="./perfil/index.html">Ver mi perfil</a></li>
+              <li class="logOut-item"><a class="header-link" href="" id="logOut" class="hidden"
+                  onclick="signOff()">Cerrar
+                  Sesion</a></li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -64,6 +68,7 @@
     <p class="copyright">Hecho por Oriana</p>
   </footer>
   <script src="https://kit.fontawesome.com/9fa96555ef.js"></script>
+  <script src="../js/sesion.js"></script>
 </body>
 
 </html>

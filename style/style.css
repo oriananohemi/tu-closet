@@ -77,18 +77,10 @@ body {
   border-radius: 20px;
   background-color: #e1bee7;
   border: 1px solid #e1bee7;
-  height: 220px;
+  height: 180px;
   padding: 20px;
   position: absolute;
   width: 220px;
-}
-
-.profile:hover .sesion, .input-sesion {
-  display: block;
-}
-
-.profile-name:hover {
-  color: #e1bee7;
 }
 
 .input-sesion {
@@ -105,6 +97,32 @@ body {
   padding: 5px;
 }
 
+.profile:hover .sesion, .input-sesion {
+  display: block;
+}
+
+.logOut {
+  border-radius: 20px;
+  background-color: #e1bee7;
+  border: 1px solid #e1bee7;
+  font-size: 20px;
+  height: 180px;
+  padding: 20px;
+  position: absolute;
+  width: 220px;
+}
+
+.sesion-container:hover .logOut{
+  display: block;
+}
+
+.logOut-item {
+  padding: 20px 0;
+}
+
+.logOut-item:hover {
+  color: white;
+}
 
 /* ESTILOS DEL HERO */
 

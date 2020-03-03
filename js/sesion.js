@@ -7,10 +7,7 @@ var logOut = document.getElementById('logOut')
 function loggedIn() {
   if (localStorage.getItem('name')) {
     loginUser.innerHTML = localStorage.getItem('name')
-    logOut.classList.remove('hidden')
     logIn.classList.add('hidden')
-  } else {
-    alert('Debes iniciar sesion')
   }
 }
 
@@ -22,7 +19,6 @@ function logged() {
     loginUser.innerHTML = logName.value
     localStorage.setItem('name', logName.value)
     logIn.classList.add('hidden')
-    logOut.classList.remove('hidden')
   } else {
     alert('Contrasena Incorrecta')
   }
@@ -32,5 +28,4 @@ function signOff() {
   loginUser.innerHTML = ''
   localStorage.clear()
   logIn.classList.remove('hidden')
-  logOut.classList.add('hidden')
 }
