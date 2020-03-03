@@ -68,19 +68,25 @@ body {
 
 .sesion {
   border-radius: 20px;
-  border: 1px solid red;
-  display: none;
-  height: 250px;
-  padding: 10px;
-  width: 250px;
+  background-color: #e1bee7;
+  border: 1px solid #e1bee7;
+  height: 220px;
+  padding: 20px;
+  position: absolute;
+  width: 220px;
 }
 
-.profile:hover .sesion {
+.profile:hover .sesion, .input-sesion {
   display: block;
 }
 
+.profile-name:hover {
+  color: #e1bee7;
+}
+
 .input-sesion {
-  max-width: 200px;
+  max-width: 180px;
+  padding: 10px;
   margin: 10px 0;
 }
 
@@ -141,16 +147,22 @@ body {
 }
 
 .img-container {
+  border: 1px solid black;
   width: 300px;
 }
 
 .buy {
-  background-color: royalblue;
+  /* background-color: royalblue; */
   font-size: 20px;
 }
 
 .buttons {
- max-width: 80px; 
+  border-radius: 10px;
+  border-color:#e1bee7;
+  background-color: #e1bee7;
+  max-width: 120px;
+  margin: 10px 0;
+  padding: 5px;
 }
 
 /* ESTILOS DE LA SECCION NOSOTROS */
@@ -212,11 +224,11 @@ body {
 }
 
 .social-link {
-  padding: 20px;
+  padding: 30px;
 }
 
 .social-link:hover {
-  color: blue;
+  color: #e1bee7;
 }
 
 .copyright {

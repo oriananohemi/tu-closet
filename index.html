@@ -25,18 +25,18 @@
       <ul class="flex-container header-list">
         <li class="header-item"><a class="header-link" href="">Articulos</a></li>
         <li class="header-item"><a class="header-link" href="">Nosotros</a></li>
-        <li class="header-item profile"><a class="header-link" href="">Perfil</a>
-          <div class="sesion">
+        <li class="header-item profile" id="logIn"><a class="header-link" href="">Iniciar Sesion</a>
+          <div class="sesion hidden">
             <input type="text" class="input-sesion" placeholder="Indique su nombre" id="loginName">
             <input type="password" class="input-sesion" placeholder="Indique su clave" id="loginPass">
             <button class="button-sesion" id="open" onclick="logged()">Ingresar</button>
           </div>
         </li>
+        <li><a href="" id="logOut" class="hidden" onclick="signOff()">Cerrar Sesion</a></li>
         <li class="header-item">
           <a href="./perfil/index.html">
-            <h2 id="loginUser">
+            <h2 class="profile-name" id="loginUser"></h2>
           </a>
-          </h2>
         </li>
       </ul>
     </nav>
