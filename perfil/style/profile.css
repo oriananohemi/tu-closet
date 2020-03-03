@@ -1,0 +1,25 @@
+.profile-container {
+  background-color: turquoise;
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.profile-img {
+  flex: 1 1 50%;
+  width: 200px;
+}
+
+.profile {
+  border-top: 1px solid white;
+  flex: 1 1 50%;
+  color: white;
+  font-size: 25px;
+}
+
+@media(max-width:920px) { 
+  .profile-img,
+  .profile {
+    flex: 1 1 100%;
+  }
+}
