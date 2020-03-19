@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu&display=swap");
 
 /* ELIMINAR ESTILOS POR DEFECTO DEL BROWSER */
 
@@ -21,7 +21,7 @@ ul {
 
 body {
   font-size: 25px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
 
@@ -50,8 +50,8 @@ body {
 }
 
 .brand {
-  width: 100px;
-} 
+  width: 80px;
+}
 
 .header-item {
   padding: 10px;
@@ -97,7 +97,8 @@ body {
   padding: 5px;
 }
 
-.profile:hover .sesion, .input-sesion {
+.profile:hover .sesion,
+.input-sesion {
   display: block;
 }
 
@@ -112,7 +113,7 @@ body {
   width: 220px;
 }
 
-.sesion-container:hover .logOut{
+.sesion-container:hover .logOut {
   display: block;
 }
 
@@ -157,14 +158,14 @@ body {
 .card {
   border: 1px solid black;
   border-radius: 20px;
-  flex: 1 1 33,3%;
+  flex: 1 1 33, 3%;
   padding: 10px;
   margin: 20px;
 }
 
 .card:hover {
   transform: translateY(15px);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .img-container {
@@ -179,7 +180,7 @@ body {
 
 .buttons {
   border-radius: 10px;
-  border-color:#e1bee7;
+  border-color: #e1bee7;
   background-color: #e1bee7;
   max-width: 120px;
   margin: 10px 0;
@@ -189,38 +190,53 @@ body {
 /* ESTILOS DE LA SECCION NOSOTROS */
 
 .slider {
-	width: 95%;
-    overflow: hidden;
-    margin: 0 auto;
+  width: 95%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .slider ul {
-	display: flex;
-	width: 400%;
-	animation: cambio 20s infinite alternate linear;
+  display: flex;
+  width: 400%;
+  animation: cambio 20s infinite alternate linear;
 }
 
 .slider img,
 .slider li {
-    border-radius: 5px;
-    border: 1px solid black;
-    height: 500px;
-	  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 500px;
+  width: 100%;
 }
 
-
 @keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
 
 .text-section,
@@ -258,46 +274,58 @@ body {
   font-size: 12px;
 }
 
-@media(max-width:920px) {
+@media (max-width: 600px) {
   .header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  } 
+    justify-content: space-between;
+    padding: 10px;
+  }
 
-.header-list {
-  flex-direction: column;
-}
+  .icon-menu {
+    color: #e1bee7;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    font-size: 30px;
+  }
 
-.icon-menu {
-  position: relative;
-  transition: all .5s ease-in-out;
-  font-size: 25px;
-}
+  .header-list {
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    margin-left: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60%;
+  }
 
-.header-nav {
-  margin-left: -600%;
-}
+  .header-menu:hover .header-list {
+    margin-left: 0;
+  }
 
-.header-menu:hover .header-nav {
-  margin-left: 0;
-}
-}
+  .header-item {
+    flex: 1 1 100%;
+    padding: 0;
+  }
 
-@media (max-width:600px) {
   .hero {
-  min-height: 400px;
-}
+    min-height: 400px;
+  }
 
-.hero-text {
-  padding-top: 5%;
-}
+  .hero-text {
+    padding-top: 5%;
+  }
 
-.title {
-  font-size: 50px;
-}
+  .title {
+    font-size: 50px;
+  }
 
-.subtitle {
-  display: none;
-}
+  .subtitle {
+    display: none;
+  }
+  /* .sesion,
+  .logOut {
+    background-color: transparent;
+    left: 30%;
+  } */
 }
